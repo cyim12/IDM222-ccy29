@@ -73,7 +73,7 @@
 /* GENERAL */
 
 body {
-  margin: 0;
+  margin: 1rem 1rem 0rem 1rem;
   position: relative;
   background-color: #EEECEB;
   border-color: white;
@@ -150,13 +150,18 @@ h1.greeting {
   font-weight: normal;
 }
 
-.work1 {
+.portfolio {
+  position: relative;
+}
+
+.box1 {
   background-color: #C9B4B4;
   margin: 8rem 1rem 0 1rem;
   float: left;
   width: 1000px;
   height: 550px;
   box-shadow: 10px 10px 10px rgb(153, 153, 153);
+  position: static;
 }
 
 img.rodin {
@@ -173,31 +178,45 @@ img.rodin {
   padding-top: 7rem;
 }
 
-h4.worktitle1 {
+h4.worktitle1, h4.worktitle3 {
   font-family: 'Playfair_Display', serif;
   font-size: 45px;
   font-weight: normal;
 }
 
-p.workcontent1 {
+p.workcontent1, p.workcontent3 {
   padding-left: 10rem;
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 25px;
 }
 
-.link1 {
+.link1, .link3 {
   padding-left: 10rem;
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 10px;
 }
 
-.work2 {
+.box2 {
   background-color: #B8AB9C;
-  margin: 8rem 1rem 0 1rem;
+  margin: 15rem 1rem 0 1rem;
   float: right;
   width: 1000px;
   height: 550px;
-  box-shadow: 10px 10px 10px rgb(153, 153, 153);
+  box-shadow: -10px 10px 10px rgb(153, 153, 153);
+  position: static;
+}
+
+.workcontext2 {
+  position: absolute;
+  padding-left: 9rem;
+}
+
+img.teado {
+  position: absolute;
+  height: 560px;
+  width: 660px;
+  padding-left: 14rem;
+  padding-top: 9rem;
 }
 
 h4.worktitle2{
@@ -206,7 +225,52 @@ h4.worktitle2{
   font-weight: normal;
 }
 
-.workcontext2 {
+p.workcontent2 {
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 25px;
+}
+
+.box3 {
+  background-color: #8488AC;
+  margin: 15rem 1rem 0 1rem;
+  float: left;
+  width: 1000px;
+  height: 550px;
+  box-shadow: 10px 10px 10px rgb(153, 153, 153);
+  position: static;
+}
+
+.workcontext3 {
   position: absolute;
 }
 
+h4.worktitle3{
+  font-family: 'Playfair_Display', serif;
+  font-size: 45px;
+  font-weight: normal;
+}
+
+#paint_iso {
+  width: 375px;
+  height: 272px;
+  position: absolute;
+  box-shadow: 10px 10px 10px rgb(58, 58, 58);
+  margin-left: 13rem;
+  margin-top: 10rem;
+}
+
+#white_char {
+  width: 375px;
+  height: 282px;
+  position: absolute;
+  box-shadow: 10px 10px 10px rgb(58, 58, 58);
+  margin-left: 25rem;
+  margin-top: 20rem;
+}
+
+.footer {
+  background-color: #DFD8D4;
+  height: 245px;
+  position: relative;
+  margin-top: -245px;
+}

@@ -22,17 +22,10 @@
 }
 
 @font-face {
-  font-family: 'Baskerville';
-  src: url('../fonts/Baskerville/baskervville-regular-webfont.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'playfairdisplay';
+  src: url('../fonts/playfairdisplay/PlayfairDisplay-Bold.woff2') format('woff2'),;
+  font-weight: bold;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Baskerville';
-  src: url('../fonts/Baskerville/baskervville-italic-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: italic;
 }
 
 /* GENERAL */
@@ -40,18 +33,27 @@
 body {
   margin: 0;
   position: relative;
+  background-color: white;
 }
 
 .home {
-  background-color: rgb(252, 247, 243);
+  background-color: #EEECEB;
+  margin: 1rem;
 }
 
-nav {
+.logo {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  padding: 3rem;
+}
+
+.homenavlist {
   padding: 0.7rem;
-  text-align: left;
-  position: absolute;
+  text-align: center;
   top: 8px;
   left: 16px;
+  display: inline;
 }
 
 ul.homenavlist, ul.navlist {
@@ -80,28 +82,31 @@ a {text-decoration: none;}
 
 a.portcs:link {color: #393E54;}
 a.portcs:visited {color: #393E54;}
-a.portcs:hover {color: #850009;}
+a.portcs:hover {color: #850009;
+  transition-duration: 0.4s;}
 
 a.resume:link {color: #393E54;}
 a.resume:visited {color: #393E54;}
-a.resume:hover {color: #850009;}
+a.resume:hover {color: #850009;
+  transition-duration: 0.4s;}
 
 a.aboutme:link {color: #393E54;}
 a.aboutme:visited {color: #393E54;}
-a.aboutme:hover {color: #850009;}
+a.aboutme:hover {color: #850009;
+  transition-duration: 0.4s;}
 
 
 h1.name {
   color: #393E54;
-  font-family: 'Josefin_Sans', Helvetica, sans-serif;
-  font-size: 550%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 520%;
   font-weight: bold;
   margin: 1rem;
-  position: absolute;
+  padding: 1rem;
   text-align: center;
-  top: 10%;
-  left: 20%;
-  right: 20%;
+  position: relative;
+  display: block;
+  top: 8rem;
 }
 
 h2.positions {
@@ -111,96 +116,21 @@ h2.positions {
   font-size: 120%;
   font-weight: normal;
   text-align: center;
-  padding-bottom: 6rem;
-  margin: 1rem;
-  position: absolute;
-  text-align: center;
-  top: 18%;
-  left: 20%;
-  right: 20%;
+  position: relative;
+  display: block;
+  top: 7rem;
 }
 
 h3.greeting {
   color: #850009;
   font-family: 'Josefin_Sans', Helvetica, sans-serif;
   font-size: 200%;
-  max-width: 50rem;
+  max-width: 60rem;
   padding: 3rem 3rem 3rem 7rem;
-  position: absolute;
   left: 16px;
-  top: 22%;
-}
-
-@media screen and (max-width: 1280px) {
-  h1.name {
-    font-size: 420%;
-  }
-  h2.positions {
-    font-size: 100%;
-    top: 18%;
-  }
-  h3.greeting {
-    font-size: 180%;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  h1.name {
-    font-size: 380%;
-    top: 12%;
-    left: 2%;
-    right: 2%;
-  }
-  h2.positions {
-    font-size: 80%;
-    top: 21.5%;
-  }
-  h3.greeting {
-    font-size: 130%;
-    top: 28%;
-    max-width: 40rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1.name {
-    font-size: 270%;
-    top: 12%;
-    left: 1%;
-    right: 1%;
-  }
-  h2.positions {
-    font-size: 80%;
-    top: 22%;
-  }
-  h3.greeting {
-    font-size: 110%;
-    top: 28%;
-    max-width: 30rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  h1.name {
-    font-size: 200%;
-    top: 22%;
-    left: 2%;
-    right: 2%;
-  }
-  h2.positions {
-    font-size: 40%;
-    top: 35%;
-  }
-  h3.greeting {
-    font-size: 80%;
-    top: 35%;
-    max-width: 25rem;
-    padding: 3rem 3rem 3rem 2rem;
-  }
-}
-
-.works {
-  background-color: #ccc2b8;
+  position: relative;
+  display: block;
+  top: 7rem;
 }
 
 /* ABOUT ME */

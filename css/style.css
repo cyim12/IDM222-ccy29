@@ -2,9 +2,30 @@
 
 @font-face {
   font-family: 'Josefin_Sans';
+  src: url('./fonts/JosefinSans/josefinsans-light-webfont.woff2') format('woff2');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin_Sans';
+  src: url('./fonts/JosefinSans/josefinsans-lightitalic-webfont.woff2') format('woff2');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin_Sans';
   src: url('./fonts/JosefinSans/josefinsans-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin_Sans';
+  src: url('./fonts/JosefinSans/josefinsans-italic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
@@ -16,16 +37,37 @@
 
 @font-face {
   font-family: 'Josefin_Sans';
-  src: url('./fonts/JosefinSans/josefinsans-light-webfont.woff2') format('woff2');
-  font-weight: lighter;
+  src: url('./fonts/JosefinSans/josefinsans-bolditalic-webfont.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair_Display';
+  src: url('./fonts/PlayfairDisplay/playfairdisplay-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'playfairdisplay';
-  src: url('./fonts/playfairdisplay/PlayfairDisplay-Bold.woff2') format('woff2'),;
+  font-family: 'Playfair_Display';
+  src: url('./fonts/PlayfairDisplay/playfairdisplay-italic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair_Display';
+  src: url('./fonts/PlayfairDisplay/playfairdisplay-bold-webfont.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair_Display';
+  src: url('./fonts/PlayfairDisplay/playfairdisplay-bolditalic-webfont.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* GENERAL */
@@ -54,7 +96,7 @@ body {
 ul.homenavlist {
   margin-top: 2.5rem;
   list-style: none;
-  font-family: 'playfairdisplay', serif;
+  font-family: 'Playfair_Display', serif;
   font-weight: normal;
   padding-left: 1rem;
   display: inline-block;

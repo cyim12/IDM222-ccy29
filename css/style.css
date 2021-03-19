@@ -1,45 +1,9 @@
 /* FONTS */
-
-@font-face {
-  font-family: 'Josefin_Sans';
-  src: url('../fonts/JosefinSans/josefinsans-light-webfont.woff2') format('woff2');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Josefin_Sans';
-  src: url('../fonts/JosefinSans/josefinsans-lightitalic-webfont.woff2') format('woff2');
-  font-weight: lighter;
-  font-style: italic;
-}
-
 @font-face {
   font-family: 'Josefin_Sans';
   src: url('../fonts/JosefinSans/josefinsans-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Josefin_Sans';
-  src: url('../fonts/JosefinSans/josefinsans-italic-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Josefin_Sans';
-  src: url('../fonts/JosefinSans/josefinsans-bold-webfont.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Josefin_Sans';
-  src: url('../fonts/JosefinSans/josefinsans-bolditalic-webfont.woff2') format('woff2');
-  font-weight: bold;
-  font-style: italic;
 }
 
 @font-face {
@@ -51,36 +15,21 @@
 
 @font-face {
   font-family: 'Playfair_Display';
-  src: url('../fonts/PlayfairDisplay/playfairdisplay-italic-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Playfair_Display';
   src: url('../fonts/PlayfairDisplay/playfairdisplay-bold-webfont.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Playfair_Display';
-  src: url('../fonts/PlayfairDisplay/playfairdisplay-bolditalic-webfont.woff2') format('woff2');
-  font-weight: bold;
-  font-style: italic;
-}
-
 /* GENERAL */
 
 body {
-  margin: 1rem 1rem 09rem 1rem;
+  margin: 1rem 0rem 6rem 0rem;
   background-color: #EEECEB;
   border: 1rem;
 }
 
 .header {
   background-color: #EEECEB;
-  margin: 1rem 1rem 0 1rem;
 }
 
 .logo {
@@ -88,12 +37,11 @@ body {
   height: 90px;
   display: inline-block;
   padding: 3rem;
-  margin-left: 3rem;
 }
 
 .navlist {
-  margin-top: 4.5rem;
-  margin-right: 4rem;
+  margin-top: 4rem;
+  margin-right: 4.5rem;
   list-style: none;
   font-family: 'Playfair_Display', serif;
   font-weight: normal;
@@ -104,8 +52,8 @@ body {
   font-size: 1rem;
   font-weight: normal;
   display: inline;
-  padding: 2rem;
-  font-size: 18px;
+  padding: 0.5rem;
+  font-size: 16px;
 }
 
 a {text-decoration: none;}
@@ -127,176 +75,552 @@ a.aboutme:hover {color: #850009;
 
 .main {
   margin: 0;
-  padding-left: 4rem;
 }
 
 h3.name {
   margin: 0;
   padding-top: 4rem;
-  padding-left: 6rem;
+  padding-left: 2rem;
   font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: normal;
+  color: #850009;
+}
+
+h3.pgname {
+  margin: 2rem;
+  text-align: center;
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #850009;
 }
 
 h1.greeting {
-  padding-left: 6rem;
+  padding-left: 3rem;
   padding-top: 1rem;
-  width: 1100px;
-  font-size: 60px;
+  margin: 1.5rem 1.5rem 7rem;
+  max-width: 400px;
+  font-size: 30px;
+  letter-spacing: 1px;
   font-family: 'Playfair_Display', serif;
   font-weight: normal;
 }
 
-.portfolio {
-  position: relative;
+.work1 {
+  margin-bottom: 6rem;
 }
 
-/* HOME WORK 1 */
 .box1 {
+  position: relative;
   background-color: #C9B4B4;
-  margin: 8rem 1rem 0 1rem;
-  float: left;
-  width: 1000px;
-  height: 550px;
-  box-shadow: 10px 10px 10px rgb(153, 153, 153);
+  padding: 2rem;
 }
 
 img.rodin {
-  position: absolute;
-  height: 560px;
-  width: 660px;
-  padding-left: 13rem;
-  padding-top: 9rem;
+  height: 240px;
+  width: 320px;
+  padding-top: 1rem;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.workcontext1 {
-  position: absolute;
-  padding-left: 58rem;
-  padding-top: 14rem;
+.workcontext1, .workcontext2, .workcontext3 {
+  text-align: center;
 }
 
 h4.worktitle1 {
   font-family: 'Playfair_Display', serif;
-  font-size: 45px;
-  font-weight: normal;
-  width: 600px;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
 }
 
-p.workcontent1 {
-  padding-left: 10rem;
+.workcontent1, .workcontent2, .workcontent3 {
   font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 25px;
+  font-size: 16px;
+  color: #850009;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.link1 {
-  padding-left: 10rem;
+.link1, .link2, .link3 {
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 10px;
+  color: #393E54;
 }
 
-/* HOME WORK 2 */
+.work2 {
+  margin-bottom: 6rem;
+}
+
 .box2 {
   background-color: #B8AB9C;
-  margin: 15rem 1rem 0 1rem;
-  float: right;
-  width: 1000px;
-  height: 550px;
-  box-shadow: -10px 10px 10px rgb(153, 153, 153);
-  position: static;
+  padding: 2rem;
 }
 
-.workcontext2 {
-  position: absolute;
-  float: left;
-  margin-top: 63rem;
-  margin-left: 13rem;
-}
-
-.just2 {
-  text-align: right;
-  padding-right: 12rem;
+img.teado {
+  height: 240px;
+  width: 320px;
+  padding-top: 1rem;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 h4.worktitle2 {
   font-family: 'Playfair_Display', serif;
-  font-size: 45px;
-  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
 }
 
-img.teado {
-  position: stat;
-  height: 560px;
-  width: 660px;
-  padding-left: 14rem;
-  padding-top: 9rem;
+.work3 {
+  margin-bottom: 6rem;
 }
 
-p.workcontent2 {
-  font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 25px;
-  text-align: right;
-}
-
-.link2 {
-  padding-left: 18rem;
-  font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 10px;
-  text-align: right;
-}
-
-/* HOME WORK 3 */
 .box3 {
   background-color: #8488AC;
-  margin: 15rem 1rem 20rem 1rem;
-  float: left;
-  width: 1000px;
-  height: 550px;
-  box-shadow: 10px 10px 10px rgb(153, 153, 153);
-  position: static
+  padding: 2rem;
 }
 
-.workcontext3 {
-  position: absolute;
-  padding-left: 58rem;
-  padding-top: 113rem;
+img.artimages {
+  height: 240px;
+  width: 320px;
+  padding-top: 1rem;
+  margin-left: 13%;
+  margin-right: 13%;
 }
 
-p.workcontent3 {
-  padding-left: 10rem;
-  font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 25px;
-}
-
-h4.worktitle3{
+h4.worktitle3 {
   font-family: 'Playfair_Display', serif;
-  font-size: 45px;
-  font-weight: normal;
-  margin-right: 10rem;
+  font-size: 26px;
+  text-align: center;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
 }
 
-.link3 {
-  padding-left: 10rem;
-  font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 10px;
+.worklinks {
+  float: right;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
 }
 
-#paint_iso {
-  width: 400px;
-  height: 300px;
-  position: absolute;
-  box-shadow: 10px 10px 10px rgb(58, 58, 58);
-  margin-left: 10rem;
-  margin-top: 10rem;
-}
-
-#white_char {
-  width: 400px;
-  height: 300px;
-  position: absolute;
-  box-shadow: 10px 10px 10px rgb(58, 58, 58);
-  margin-left: 23rem;
-  margin-top: 20rem;
+.workicon {
+  width: 50px;
+  height: 50px;
 }
 
 /* RESUME */
+.downloadres {
+  margin-bottom: 3rem;
+}
+
+h4 {
+  font-family: 'Playfair_Display', serif;
+  font-size: 30px;
+  margin: 3rem 1rem 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+p {
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem;
+}
+
+ul {
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 13px;
+  max-width: 550px;
+}
+
+#resumelist {
+  margin-bottom: 3rem;
+}
+
+h3.download {
+  font-family: 'Playfair_Display', serif;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+img.downloadlogo {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 1rem;
+  margin-left: 44%;
+  margin-right: 44%;
+}
+
+.mainresume {
+  margin: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "edu"
+    "exp"
+    "cre"
+    "ski"
+    "rel"
+    "act"
+    "hon"
+}
+
+/* ABOUT */
+.mainabout {
+  margin-bottom: 5rem;
+}
+
+.selfpic {
+  width: 16rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h3.aboutme {
+  font-family: 'Playfair_Display', serif;
+  font-size: 30px;
+  margin: 3rem 1rem 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  color: #393E54;
+}
+
+.me_para {
+  max-width: 25rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* RODIN */
+.headerrod {
+  background-color: #C9B4B4;
+  margin-bottom: 4rem;
+}
+
+.mainrodin {
+  padding-bottom: 4rem;
+}
+
+.back {
+  padding: 2.5rem;
+  font-family: 'Playfair_Display', serif;
+  letter-spacing: 0.1rem;
+  color: #393E54;
+}
+
+h3.studytitle {
+  text-align: left;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  max-width: 350px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-family: 'Playfair_Display', serif;
+  font-weight: normal;
+}
+
+.csimage {
+  height: 220px;
+  width: 300px;
+  padding-top: 1rem;
+  margin-left: 19%;
+  margin-right: 19%;
+}
+
+p.para1 {
+  background-color: #C9B4B4;
+  max-width: 340px;
+  text-align: center;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 4rem;
+}
+
+h5.subtitle {
+  padding-top: 1rem;
+  font-size: 26px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: 'Playfair_Display', serif;
+  font-weight: normal;
+}
+
+p.para {
+  max-width: 340px;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-bottom: 4rem;
+}
+
+h6.wpsubtitle {
+  padding-top: 1rem;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Playfair_Display', serif;
+  font-weight: normal;
+}
+
+.wireframe, .cardsort, .color_type, .finaluirodin {
+  width: 320px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1rem;
+}
+
+#americanathlete {
+  margin-bottom: 5rem;
+}
+
+.top {
+  margin-left: 39%;
+  margin-right: 39%;
+  padding: 2rem;
+  font-family: 'Playfair_Display', serif;
+  letter-spacing: 0.1rem;
+  color: #393E54;
+}
+
+/* ART WORK */
+.headerart {
+  background-color: #B8AB9C;
+  margin-bottom: 4rem;
+}
+
+.artworks {
+  padding-bottom: 4rem;
+}
+
+h4.awtitles {
+  padding-top: 1rem;
+  margin: 1.2rem;
+  font-size: 22px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: 'Playfair_Display', serif;
+  font-weight: normal;
+}
+
+.charcoal, .painting, .photo {
+  height: 150px;
+	margin-top: 10px;
+	padding: 5px;
+	width: 300px;
+  height: 200px;
+}
+
+.drawings, .paintings, .photography {
+  padding: 0;
+	margin: 5rem;
+	list-style: none;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+#photostairs {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-left: 5rem;
+  }
+  
+  .navlist {
+    margin-right: 3rem;
+  }
+
+  .navlist li {
+    padding: 1.2rem;
+    font-size: 19px;
+  }
+
+  h3.name {
+    padding-left: 4rem;
+    font-size: 18px;
+  }
+  
+  h1.greeting {
+    padding-left: 4rem;
+    padding-top: 3rem;
+    margin: 1.5rem 1.5rem 12rem;
+    max-width: 650px;
+    font-size: 40px;
+  }
+
+.box1, .box2, .box3 {
+  padding: 3rem;
+}
+
+img.rodin {
+  height: 360px;
+  width: 450px;
+}
+
+h4.worktitle1, h4.worktitle2, h4.worktitle3 {
+  font-size: 36px;
+  margin-top: 2rem;
+}
+
+.workcontent1, .workcontent2, .workcontent3 {
+  font-size: 20px;
+  color: #850009;
+  margin-top: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+
+.link1, .link2, .link3 {
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 14px;
+  color: #393E54;
+}
+
+img.teado {
+  height: 360px;
+  width: 450px;
+}
+
+img.artimages {
+  height: 360px;
+  width: 450px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.workicon {
+  width: 50px;
+  height: 50px;
+}
+
+img.downloadlogo {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 2rem;
+  margin-left: 47%;
+  margin-right: 47%;
+}
+
+/* ABOUT */
+.aboutmebody {
+  padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.selfpic {
+  width: 20rem;
+  height: 19rem;
+}
+
+h3.aboutme {
+  font-size: 40px;
+}
+
+.me_para {
+  max-width: 42rem;
+  font-size: 120%;
+}
+
+/* RESUME */
+@media screen and (min-width: 768px) {
+  .edu {
+    grid-area: edu;
+  }
+
+  .exp {
+    grid-area: exp;
+  }
+
+  .cre {
+    grid-area: cre;
+  }
+
+  .ski {
+    grid-area: ski;
+  }
+
+  .rel {
+    grid-area: rel;
+  }
+
+  .act {
+    grid-area: act;
+  }
+
+  .hon {
+    grid-area: hon;
+  }
+
+  .mainresume {
+    margin: 0 auto;
+    max-width: 60rem;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    grid-template-areas:
+      '. edu .'
+      '. exp .'
+      '. cre .'
+      '. ski .'
+      '. rel .'
+      '. act .'
+      '. hon .';
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .edu {
+    grid-area: edu;
+  }
+
+  .exp {
+    grid-area: exp;
+  }
+
+  .cre {
+    grid-area: cre;
+  }
+
+  .ski {
+    grid-area: ski;
+  }
+
+  .rel {
+    grid-area: rel;
+  }
+
+  .act {
+    grid-area: act;
+  }
+
+  .hon {
+    grid-area: hon;
+  }
+
+  .mainresume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      'edu    exp'
+      'cre    ski'
+      'cre    rel'
+      'cre    act'
+      'cre    hon';
+    ;}
+  }
+}

@@ -173,10 +173,10 @@ img.rodin {
 .workcontext1 {
   position: absolute;
   padding-left: 58rem;
-  padding-top: 12rem;
+  padding-top: 14rem;
 }
 
-h4.worktitle1, h4.worktitle3 {
+h4.worktitle1 {
   font-family: 'Playfair_Display', serif;
   font-size: 45px;
   font-weight: normal;
@@ -209,7 +209,7 @@ p.workcontent1 {
 .workcontext2 {
   position: absolute;
   float: left;
-  margin-top: 62rem;
+  margin-top: 63rem;
   margin-left: 13rem;
 }
 
@@ -259,7 +259,7 @@ p.workcontent2 {
 .workcontext3 {
   position: absolute;
   padding-left: 58rem;
-  padding-top: 110rem;
+  padding-top: 113rem;
 }
 
 p.workcontent3 {

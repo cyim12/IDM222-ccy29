@@ -152,6 +152,7 @@ h1.greeting {
   position: relative;
 }
 
+/* HOME WORK 1 */
 .box1 {
   background-color: #C9B4B4;
   margin: 8rem 1rem 0 1rem;
@@ -171,34 +172,30 @@ img.rodin {
 
 .workcontext1 {
   position: absolute;
-  padding-left: 55rem;
+  padding-left: 58rem;
   padding-top: 12rem;
 }
 
-h4.worktitle1, h4.worktitle2, h4.worktitle3 {
+h4.worktitle1, h4.worktitle3 {
   font-family: 'Playfair_Display', serif;
   font-size: 45px;
   font-weight: normal;
   width: 600px;
 }
 
-p.workcontent1, p.workcontent3 {
+p.workcontent1 {
   padding-left: 10rem;
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 25px;
 }
 
-.link1, .link3 {
+.link1 {
   padding-left: 10rem;
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 10px;
 }
 
-.link2 {
-  font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 10px;
-}
-
+/* HOME WORK 2 */
 .box2 {
   background-color: #B8AB9C;
   margin: 15rem 1rem 0 1rem;
@@ -213,11 +210,22 @@ p.workcontent1, p.workcontent3 {
   position: absolute;
   float: left;
   margin-top: 62rem;
-  margin-left: 14rem;
+  margin-left: 13rem;
+}
+
+.just2 {
+  text-align: right;
+  padding-right: 12rem;
+}
+
+h4.worktitle2 {
+  font-family: 'Playfair_Display', serif;
+  font-size: 45px;
+  font-weight: normal;
 }
 
 img.teado {
-  position: absolute;
+  position: stat;
   height: 560px;
   width: 660px;
   padding-left: 14rem;
@@ -227,8 +235,17 @@ img.teado {
 p.workcontent2 {
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 25px;
+  text-align: right;
 }
 
+.link2 {
+  padding-left: 18rem;
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 10px;
+  text-align: right;
+}
+
+/* HOME WORK 3 */
 .box3 {
   background-color: #8488AC;
   margin: 15rem 1rem 20rem 1rem;
@@ -241,14 +258,27 @@ p.workcontent2 {
 
 .workcontext3 {
   position: absolute;
-  padding-left: 55rem;
+  padding-left: 58rem;
   padding-top: 110rem;
+}
+
+p.workcontent3 {
+  padding-left: 10rem;
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 25px;
 }
 
 h4.worktitle3{
   font-family: 'Playfair_Display', serif;
   font-size: 45px;
   font-weight: normal;
+  margin-right: 10rem;
+}
+
+.link3 {
+  padding-left: 10rem;
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 10px;
 }
 
 #paint_iso {
@@ -269,3 +299,4 @@ h4.worktitle3{
   margin-top: 20rem;
 }
 
+/* RESUME */

@@ -73,10 +73,8 @@
 /* GENERAL */
 
 body {
-  margin: 1rem 1rem 0rem 1rem;
-  position: relative;
+  margin: 1rem 1rem 09rem 1rem;
   background-color: #EEECEB;
-  border-color: white;
   border: 1rem;
 }
 
@@ -128,7 +126,7 @@ a.aboutme:hover {color: #850009;
   transition-duration: 0.4s;}
 
 .main {
-  margin: 0 1rem 0 1rem;
+  margin: 0;
   padding-left: 4rem;
 }
 
@@ -161,7 +159,6 @@ h1.greeting {
   width: 1000px;
   height: 550px;
   box-shadow: 10px 10px 10px rgb(153, 153, 153);
-  position: static;
 }
 
 img.rodin {
@@ -175,13 +172,14 @@ img.rodin {
 .workcontext1 {
   position: absolute;
   padding-left: 55rem;
-  padding-top: 7rem;
+  padding-top: 12rem;
 }
 
-h4.worktitle1, h4.worktitle3 {
+h4.worktitle1, h4.worktitle2, h4.worktitle3 {
   font-family: 'Playfair_Display', serif;
   font-size: 45px;
   font-weight: normal;
+  width: 600px;
 }
 
 p.workcontent1, p.workcontent3 {
@@ -192,6 +190,11 @@ p.workcontent1, p.workcontent3 {
 
 .link1, .link3 {
   padding-left: 10rem;
+  font-family: 'Josefin_Sans', Arial, sans-serif;
+  font-size: 10px;
+}
+
+.link2 {
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 10px;
 }
@@ -208,7 +211,9 @@ p.workcontent1, p.workcontent3 {
 
 .workcontext2 {
   position: absolute;
-  padding-left: 9rem;
+  float: left;
+  margin-top: 62rem;
+  margin-left: 14rem;
 }
 
 img.teado {
@@ -219,12 +224,6 @@ img.teado {
   padding-top: 9rem;
 }
 
-h4.worktitle2{
-  font-family: 'Playfair_Display', serif;
-  font-size: 45px;
-  font-weight: normal;
-}
-
 p.workcontent2 {
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 25px;
@@ -232,16 +231,18 @@ p.workcontent2 {
 
 .box3 {
   background-color: #8488AC;
-  margin: 15rem 1rem 0 1rem;
+  margin: 15rem 1rem 20rem 1rem;
   float: left;
   width: 1000px;
   height: 550px;
   box-shadow: 10px 10px 10px rgb(153, 153, 153);
-  position: static;
+  position: static
 }
 
 .workcontext3 {
   position: absolute;
+  padding-left: 55rem;
+  padding-top: 110rem;
 }
 
 h4.worktitle3{
@@ -251,26 +252,20 @@ h4.worktitle3{
 }
 
 #paint_iso {
-  width: 375px;
-  height: 272px;
+  width: 400px;
+  height: 300px;
   position: absolute;
   box-shadow: 10px 10px 10px rgb(58, 58, 58);
-  margin-left: 13rem;
+  margin-left: 10rem;
   margin-top: 10rem;
 }
 
 #white_char {
-  width: 375px;
-  height: 282px;
+  width: 400px;
+  height: 300px;
   position: absolute;
   box-shadow: 10px 10px 10px rgb(58, 58, 58);
-  margin-left: 25rem;
+  margin-left: 23rem;
   margin-top: 20rem;
 }
 
-.footer {
-  background-color: #DFD8D4;
-  height: 245px;
-  position: relative;
-  margin-top: -245px;
-}

@@ -118,11 +118,9 @@ h1.greeting {
 }
 
 img.rodin {
-  height: 240px;
-  width: 320px;
   padding-top: 1rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .workcontext1, .workcontext2, .workcontext3 {

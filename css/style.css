@@ -286,7 +286,7 @@ h3.aboutme {
 }
 
 h3.studytitle {
-  text-align: center;
+  text-align: left;
   max-width: 350px;
   font-size: 35px;
   letter-spacing: 1px;
@@ -314,8 +314,8 @@ h5.subtitle {
 
 p.para {
   max-width: 340px;
-  margin-left: 14%;
-  margin-right: 14%;
+  margin-left: 17%;
+  margin-right: 17%;
   margin-bottom: 4rem;
 }
 

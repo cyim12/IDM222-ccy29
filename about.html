@@ -11,7 +11,7 @@
     <div class="home">
       <div class="header">
         <a href="index.html">
-          <img src="./images/cy_logo.svg" alt='Christine Logo' class="logo" >
+          <img src="./images/cy_logo.svg" alt="Christine Logo" class="logo" >
         </a>
     <nav class="navlist">
       <ul>
@@ -23,8 +23,15 @@
     </div>
     <h3 class="pgname">ABOUT</h3>
   <div class="mainabout"> 
-    <div class="aboutmebody">
-      <img src="./images/self.png" alt="Self Image" class="selfpic">
+      <div class="mepic">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="images/selfimage_large.png" />
+          <source media="(min-width: 768px)" srcset="images/selfimage_medium.png" />
+          <source media="(min-width: 375px)" srcset="images/selfimage_small.png" />
+          <img src="images/selfimage_small.png" alt="Self Picture" />
+        </picture>
+      </div>
+      <div class="aboutmebody">
       <div class="meparagraphs">
         <h3 class="aboutme">hello, i'm christine.</h3> 
         <p class="me_para" id="para1">

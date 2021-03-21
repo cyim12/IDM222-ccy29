@@ -11,7 +11,7 @@
     <div class="home">
       <div class="header">
         <a href="index.html">
-          <img src="./images/cy_logo.svg" alt='Christine Logo' class="logo" >
+          <img src="./images/cy_logo.svg" alt="Christine Logo" class="logo" >
         </a>
     <nav class="navlist">
       <ul>
@@ -30,8 +30,13 @@
     <div class="portfolio">
       <div class="work1">
         <div class="box1">
-          <img src="./images/rodincover_small.png" alt="Rodin" class="rodin"/>
-        </div>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="images/rodincover_large.png" />
+            <source media="(min-width: 768px)" srcset="images/rodincover_medium.png" />
+            <source media="(min-width: 375px)" srcset="images/rodincover_small.png" />
+            <img src="images/rodincover_small.png" alt="Rodin Case Study" />
+          </picture>
+          </div>
         <div class="workcontext1">
           <h4 class="worktitle1">Rodin Museum Website Redesign</h4>
           <p class="workcontent1">UI DESIGN</p>
@@ -41,7 +46,12 @@
         <br>
       <div class="work2">
         <div class="box2">
-          <img src="./images/artimages.png" alt="Art Work Images" class="artimages">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="images/artworkcover_large.png" />
+            <source media="(min-width: 768px)" srcset="images/artworkcover_medium.png" />
+            <source media="(min-width: 375px)" srcset="images/artworkcover_small.png" />
+            <img src="images/artwork_small.png" alt="Art Work Cover" />
+          </picture>       
         </div>
         <div class="workcontext2">
           <h4 class="worktitle2">Art Work</h4>

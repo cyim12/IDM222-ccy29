@@ -13,15 +13,7 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Playfair_Display';
-  src: url('../fonts/PlayfairDisplay/playfairdisplay-bold-webfont.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
 /* GENERAL */
-
 body {
   margin: 1rem 0rem 6rem 0rem;
   background-color: #EEECEB;
@@ -115,15 +107,11 @@ h1.greeting {
   position: relative;
   background-color: #C9B4B4;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-img.rodin {
-  padding-top: 1rem;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.workcontext1, .workcontext2, .workcontext3 {
+.workcontext1, .workcontext2{
   text-align: center;
 }
 
@@ -136,7 +124,7 @@ h4.worktitle1 {
   margin-top: 1.5rem;
 }
 
-.workcontent1, .workcontent2, .workcontent3 {
+.workcontent1, .workcontent2 {
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 16px;
   color: #850009;
@@ -144,7 +132,7 @@ h4.worktitle1 {
   margin-bottom: 1.5rem;
 }
 
-.link1, .link2, .link3 {
+.link1, .link2 {
   font-family: 'Josefin_Sans', Arial, sans-serif;
   font-size: 10px;
   color: #393E54;
@@ -157,43 +145,12 @@ h4.worktitle1 {
 .box2 {
   background-color: #B8AB9C;
   padding: 2rem;
-}
-
-img.teado {
-  height: 240px;
-  width: 320px;
-  padding-top: 1rem;
-  margin-left: 18%;
-  margin-right: 18%;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 h4.worktitle2 {
-  font-family: 'Playfair_Display', serif;
-  font-size: 26px;
-  text-align: center;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
-  margin-top: 1.5rem;
-}
-
-.work3 {
-  margin-bottom: 6rem;
-}
-
-.box3 {
-  background-color: #8488AC;
-  padding: 2rem;
-}
-
-img.artimages {
-  height: 240px;
-  width: 320px;
-  padding-top: 1rem;
-  margin-left: 13%;
-  margin-right: 13%;
-}
-
-h4.worktitle3 {
   font-family: 'Playfair_Display', serif;
   font-size: 26px;
   text-align: center;
@@ -276,10 +233,11 @@ img.downloadlogo {
   margin-bottom: 5rem;
 }
 
-.selfpic {
-  width: 16rem;
-  margin-left: 20%;
-  margin-right: 20%;
+.mepic {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  padding: 2rem;
 }
 
 h3.aboutme {
@@ -315,23 +273,25 @@ h3.aboutme {
   color: #393E54;
 }
 
+.rodimage {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.subheading {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
 h3.studytitle {
-  text-align: left;
-  padding-left: 3rem;
-  padding-top: 1rem;
+  text-align: center;
   max-width: 350px;
   font-size: 35px;
   letter-spacing: 1px;
   font-family: 'Playfair_Display', serif;
   font-weight: normal;
-}
-
-.csimage {
-  height: 220px;
-  width: 300px;
-  padding-top: 1rem;
-  margin-left: 19%;
-  margin-right: 19%;
 }
 
 p.para1 {
@@ -368,14 +328,18 @@ h6.wpsubtitle {
   font-weight: normal;
 }
 
-.wireframe, .cardsort, .color_type, .finaluirodin {
-  width: 320px;
-  margin-left: 10%;
-  margin-right: 10%;
+.rodinimages {
+  display: flex;
+  justify-content: center;
   padding: 1rem;
 }
 
-#americanathlete {
+.wireframe, .cardsort, .stylesheet, .rodfinalui {
+  padding: 1rem;
+}
+
+.rodfinalui1 {
+  padding: 1rem;
   margin-bottom: 5rem;
 }
 
@@ -403,22 +367,19 @@ h4.awtitles {
   margin: 1.2rem;
   font-size: 22px;
   letter-spacing: 4px;
-  text-align: center;
+  padding-left: 3rem;
+  text-align: left;
   font-family: 'Playfair_Display', serif;
   font-weight: normal;
 }
 
 .charcoal, .painting, .photo {
-  height: 150px;
-	margin-top: 10px;
-	padding: 5px;
-	width: 300px;
-  height: 200px;
+	padding: 1rem;
 }
 
-.drawings, .paintings, .photography {
+.drawings, .photography {
   padding: 0;
-	margin: 5rem;
+	margin: 2rem 10rem 5rem 10rem;
 	list-style: none;
 
 	display: flex;
@@ -426,10 +387,21 @@ h4.awtitles {
 	justify-content: space-around;
 }
 
-#photostairs {
-  margin-bottom: 5rem;
+.paintings {
+  padding: 0;
+	margin: 2rem 10rem 2rem 10rem;
+	list-style: none;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
+#stairs {
+  margin-bottom: 1rem;
+}
+
+/* TABLET */
 @media screen and (min-width: 768px) {
   .logo {
     padding-left: 5rem;
@@ -457,79 +429,228 @@ h4.awtitles {
     font-size: 40px;
   }
 
-.box1, .box2, .box3 {
-  padding: 3rem;
-}
+  .box1, .box2 {
+    padding: 3rem;
+  }
 
-img.rodin {
-  height: 360px;
-  width: 450px;
-}
+  h4.worktitle1, h4.worktitle2 {
+    font-size: 36px;
+    margin-top: 2rem;
+  }
 
-h4.worktitle1, h4.worktitle2, h4.worktitle3 {
-  font-size: 36px;
-  margin-top: 2rem;
-}
+  .workcontent1, .workcontent2 {
+    font-size: 20px;
+    color: #850009;
+    margin-top: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
 
-.workcontent1, .workcontent2, .workcontent3 {
-  font-size: 20px;
-  color: #850009;
-  margin-top: 0.9rem;
-  margin-bottom: 2.5rem;
-}
+  .link1, .link2 {
+    font-family: 'Josefin_Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #393E54;
+  }
 
-.link1, .link2, .link3 {
-  font-family: 'Josefin_Sans', Arial, sans-serif;
-  font-size: 14px;
-  color: #393E54;
-}
-
-img.teado {
-  height: 360px;
-  width: 450px;
-}
-
-img.artimages {
-  height: 360px;
-  width: 450px;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.workicon {
-  width: 50px;
-  height: 50px;
-}
-
-img.downloadlogo {
-  height: 50px;
-  width: 50px;
-  margin-bottom: 2rem;
-  margin-left: 47%;
-  margin-right: 47%;
-}
+/* RESUME */
+  img.downloadlogo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 2rem;
+    margin-left: 47%;
+    margin-right: 47%;
+  }
 
 /* ABOUT */
-.aboutmebody {
-  padding: 0;
-	margin: 0;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+  .aboutmebody {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+  	justify-content: space-around;
+  }
+
+  h3.aboutme {
+    font-size: 40px;
+  }
+
+  .me_para {
+    max-width: 42rem;
+    font-size: 120%;
+  }
+
+  /* RODIN */
+  .back {
+    padding: 5rem;
+  }
+
+  h3.studytitle {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 2rem;
+    max-width: 500px;
+    font-size: 42px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  p.para1 {
+    max-width: 500px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4rem;
+    font-size: 18px;
+  }
+
+  h5.subtitle {
+    padding-top: 1rem;
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  p.para {
+    max-width: 550px;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 4rem;
+    font-size: 18px;
+  }
+
+  h6.wpsubtitle {
+    font-size: 22px;
+  }
+
+  .wireframe, .cardsort, .color_type, .finaluirodin {
+    padding: 1.3rem;
+  }
+
+  .top {
+    margin-left: 43%;
+    margin-right: 43%;
+    padding: 2rem;
+  }
+
+  /* ART WORK */
+  h4.awtitles {
+    padding-top: 4rem;
+    margin: 1.2rem;
+    font-size: 25px;
+  }
+
+  .charcoal, .painting, .photo {
+	  margin-top: 3rem;
+	  padding: 5px;
+  }
+
+  .drawings, .paintings, .photography {
+	  margin: 6rem;
+  }
 }
 
-.selfpic {
-  width: 20rem;
-  height: 19rem;
-}
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .logo {
+    padding-left: 6rem;
+  }
+  
+  .navlist {
+    margin-right: 4.5rem;
+  }
 
-h3.aboutme {
-  font-size: 40px;
-}
+  .navlist li {
+    padding: 1.4rem;
+    font-size: 21px;
+  }
 
-.me_para {
-  max-width: 42rem;
-  font-size: 120%;
+  h3.name {
+    padding-left: 8rem;
+    font-size: 25px;
+  }
+  
+  h1.greeting {
+    padding-left: 9rem;
+    padding-top: 5rem;
+    margin: 1.5rem 1.5rem 12rem;
+    max-width: 850px;
+    font-size: 48px;
+  }
+
+  .box1, .box2 {
+    padding: 7rem;
+  }
+
+  h4.worktitle1, h4.worktitle2 {
+    font-size: 42px;
+    margin-top: 5rem;
+  }
+
+  .workcontent1, .workcontent2 {
+    font-size: 26px;
+    margin-top: 0.7rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .link1, .link2 {
+    font-size: 16px;
+  }
+
+/* RESUME */
+  img.downloadlogo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 2rem;
+    margin-left: 48%;
+    margin-right: 48%;
+  }
+
+/* RODIN */
+  .back {
+    padding: 5rem;
+  }
+
+  h3.studytitle {
+    padding-top: 3rem;
+    font-size: 48px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  p.para1 {
+    max-width: 1000px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4rem;
+    font-size: 20px;
+  }
+
+  h5.subtitle {
+    padding-top: 3rem;
+    font-size: 35px;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+
+  p.para {
+    max-width: 700px;
+    margin-left: 22%;
+    margin-right: 22%;
+    font-size: 20px;
+  }
+
+  h6.wpsubtitle {
+    font-size: 25px;
+    margin-top: 6rem;
+  }
+
+  .top {
+    margin-left: 45%;
+    margin-right: 45%;
+  }
+
+  /* ART WORK */
+  .drawings, .paintings, .photography {
+	  margin: 0rem;
+  }
 }
 
 /* RESUME */
@@ -621,4 +742,3 @@ h3.aboutme {
       'cre    hon';
     ;}
   }
-}
